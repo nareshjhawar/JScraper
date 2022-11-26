@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
@@ -100,52 +101,56 @@
             <Insets />
          </opaqueInsets>
       </VBox>
-      <Pane layoutX="358.0" layoutY="46.0">
+      <StackPane layoutX="352.0" layoutY="59.0" prefHeight="523.0" prefWidth="696.0">
          <children>
-            <Region id="trans-box" layoutY="142.0" prefHeight="200.0" prefWidth="640.0" style="-fx-background-radius: 40;" stylesheets="@style.css" />
-            <Label layoutX="51.0" layoutY="192.0" text="URL" textFill="#efeeed">
-               <font>
-                  <Font name="Microsoft Sans Serif" size="22.0" />
-               </font>
-            </Label>
-            <Label layoutX="50.0" layoutY="264.0" text="Keyword" textFill="#efeeed">
-               <font>
-                  <Font name="Microsoft Sans Serif" size="22.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="622.0" fitWidth="232.0" layoutX="402.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/man.png" />
-               </image>
-            </ImageView>
-            <TextField layoutX="165.0" layoutY="185.0" prefHeight="42.0" prefWidth="346.0" promptText="https://www.amazon.com" style="-fx-border-color: #B7C3D7; -fx-border-radius: 2em; -fx-background-radius: 2em;">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </TextField>
-            <TextField layoutX="163.0" layoutY="257.0" prefHeight="42.0" prefWidth="346.0" promptText="Tv, iPhone14, Shoes" style="-fx-border-color: #B7C3D7; -fx-border-radius: 2em; -fx-background-radius: 2em;">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </TextField>
-            <Button id="scrape-btn" fx:id="btnCustomers1" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="235.0" layoutY="433.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="190.0" style="-fx-background-radius: 30;" stylesheets="@style.css" text="Scrape" textFill="#efeeed">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-               <font>
-                  <Font name="Trebuchet MS Bold" size="29.0" />
-               </font>
-            </Button>
-            <Button id="export-btn" fx:id="btnCustomers11" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="450.0" layoutY="433.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="190.0" style="-fx-background-radius: 30;" stylesheets="@style.css" text="Export" textFill="#efeeed">
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-               <font>
-                  <Font name="Trebuchet MS Bold" size="29.0" />
-               </font>
-            </Button>
+            <Pane prefHeight="179.0" prefWidth="648.0">
+               <children>
+                  <Region id="trans-box" layoutY="142.0" prefHeight="200.0" prefWidth="640.0" style="-fx-background-radius: 40;" stylesheets="@style.css" />
+                  <Label layoutX="51.0" layoutY="192.0" text="URL" textFill="#efeeed">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="264.0" text="Keyword" textFill="#efeeed">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="622.0" fitWidth="232.0" layoutX="402.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/man.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="165.0" layoutY="185.0" prefHeight="42.0" prefWidth="346.0" promptText="https://www.amazon.com" style="-fx-border-color: #B7C3D7; -fx-border-radius: 2em; -fx-background-radius: 2em;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="163.0" layoutY="257.0" prefHeight="42.0" prefWidth="346.0" promptText="Tv, iPhone14, Shoes" style="-fx-border-color: #B7C3D7; -fx-border-radius: 2em; -fx-background-radius: 2em;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <Button id="scrape-btn" fx:id="btnCustomers1" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="235.0" layoutY="433.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="190.0" style="-fx-background-radius: 30;" stylesheets="@style.css" text="Scrape" textFill="#efeeed">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="29.0" />
+                     </font>
+                  </Button>
+                  <Button id="export-btn" fx:id="btnCustomers11" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="450.0" layoutY="433.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="190.0" style="-fx-background-radius: 30;" stylesheets="@style.css" text="Export" textFill="#efeeed">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="29.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
          </children>
-      </Pane>
+      </StackPane>
       <Group id="top-bar" layoutX="952.0" layoutY="17.0" stylesheets="@style.css">
          <children>
             <Circle id="CloseBtn" fill="#ed695e" layoutX="66.0" layoutY="8.0" onMouseClicked="#onCloseBtnClick" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
