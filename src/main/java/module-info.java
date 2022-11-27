@@ -1,7 +1,6 @@
 module com.jscraper.jscraper {
     requires javafx.controls;
     requires javafx.fxml;
-    requires javafxblur;
     requires org.jsoup;
 
 
