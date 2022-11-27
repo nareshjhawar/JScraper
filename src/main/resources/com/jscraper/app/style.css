@@ -1,0 +1,55 @@
+#mainwin{
+    -fx-background-radius:25;
+    -fx-background-color : Transparent;
+}
+
+#mainPane{
+    -fx-background-color: #212020;
+    -fx-background-radius:25;
+}
+
+#side-panel{
+    /*-fx-background-color : linear-gradient( #50BFA2 0%, #0E3329 100%);*/
+    -fx-background-image: url('assets/SIDEPANNEL.png');
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 25px;
+    -fx-smooth: true;
+}
+#urlInputBox{
+    -fx-background-color:  rgba(238, 239, 239, 0.1);
+}
+
+/*BUTTONS*/
+.button:hover, #scrapeBtn:hover, #exportBtn:hover{
+-fx-background-color : #3f9680;
+-fx-background-radius: 40;
+}
+.button:pressed
+{
+-fx-background-color : #225045;
+}
+.button
+{
+    -fx-background-color : transparent;
+    -fx-text-fill : #e7e5e5;
+}
+#scrapeBtn{
+    -fx-background-color : linear-gradient(rgba(255, 131, 112, 0.85) 0%, rgba(136, 44, 29, 0.85) 100%);
+}
+#exportBtn{
+    -fx-background-color :  linear-gradient( rgba(80, 191, 162, 0.85) 0%, rgba(14, 51, 41, 0.85) 100%);
+}
+#scrapeBtn:pressed,#exportBtn:pressed{
+    -fx-background-color : #225045;
+
+}
+#CloseBtn:hover{
+    -fx-fill: #fa2a2a;
+}
+#MinBtn:hover{
+    -fx-fill: #ffdc6b;
+}
+#MaxBtn:hover{
+    -fx-fill: #3cfc56;
+}

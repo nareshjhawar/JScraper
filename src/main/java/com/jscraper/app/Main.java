@@ -1,4 +1,4 @@
-package com.jscraper.jscraper;
+package com.jscraper.app;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -9,13 +9,13 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class Jscraper extends Application {
+public class Main extends Application {
     private double x, y;
 
     @Override
     public void start(Stage stage) throws IOException {
         //adding our fxml gui
-        FXMLLoader fxmlLoader = new FXMLLoader(Jscraper.class.getResource("result.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Home.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         //window tweaking
         scene.setFill(Color.TRANSPARENT);
@@ -23,18 +23,16 @@ public class Jscraper extends Application {
         stage.initStyle(StageStyle.TRANSPARENT);
         //adding scene
         stage.setScene(scene);
-        // functions to drag windows
+        //functions to drag windows
         scene.setOnMousePressed(event -> {
             x = event.getSceneX();
             y = event.getSceneY();
         });
         scene.setOnMouseDragged(event -> {
-
             stage.setX(event.getScreenX() - x);
             stage.setY(event.getScreenY() - y);
-
         });
-        // display
+        // display screen
         stage.show();
     }
 
