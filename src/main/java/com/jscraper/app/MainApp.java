@@ -9,13 +9,13 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class Main extends Application {
+public class MainApp extends Application {
     private double x, y;
 
     @Override
     public void start(Stage stage) throws IOException {
         //adding our fxml gui
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Home.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("Home.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         //window tweaking
         scene.setFill(Color.TRANSPARENT);

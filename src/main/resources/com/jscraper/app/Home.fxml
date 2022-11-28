@@ -20,7 +20,7 @@
          <children>
             <ImageView fitHeight="617.0" fitWidth="443.0" layoutX="372.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@assets/File1.png" />
+                  <Image url="@assets/green.png" />
                </image>
             </ImageView>
             <Group id="top-bar" layoutX="720.0" layoutY="20.0" stylesheets="@style.css">
@@ -32,12 +32,12 @@
             </Group>
             <ImageView fitHeight="621.0" fitWidth="599.0" layoutX="59.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@assets/File2.png" />
+                  <Image url="@assets/blue.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="263.0" fitWidth="414.0" layoutX="27.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@assets/File3.png" />
+                  <Image url="@assets/red.png" />
                </image>
             </ImageView>
             <StackPane layoutX="117.0" layoutY="63.0" prefHeight="505.0" prefWidth="635.0">
@@ -46,20 +46,20 @@
                      <children>
                         <ImageView fitHeight="219.0" fitWidth="181.0" layoutX="-18.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@assets/Group.png" />
+                              <Image url="@assets/graphics.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="201.0" fitWidth="697.0" layoutX="25.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@assets/Rectangle5.png" />
+                              <Image url="@assets/container2.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="51.0" layoutY="192.0" text="URL" textFill="#efeeed">
+                        <Label layoutX="61.0" layoutY="192.0" text="URL" textFill="#efeeed">
                            <font>
                               <Font name="Microsoft Sans Serif" size="22.0" />
                            </font>
                         </Label>
-                        <Label layoutX="50.0" layoutY="264.0" text="Keyword" textFill="#efeeed">
+                        <Label layoutX="60.0" layoutY="264.0" text="Keyword" textFill="#efeeed">
                            <font>
                               <Font name="Microsoft Sans Serif" size="22.0" />
                            </font>
@@ -69,7 +69,7 @@
                               <Image url="@assets/man.png" />
                            </image>
                         </ImageView>
-                        <TextField fx:id="urlInput" layoutX="165.0" layoutY="185.0" prefHeight="42.0" prefWidth="346.0" promptText="https://www.amazon.com" style="-fx-border-color: #B7C3D7; -fx-border-radius: 2em; -fx-background-radius: 2em;">
+                        <TextField fx:id="urlInput" layoutX="165.0" layoutY="185.0" prefHeight="42.0" prefWidth="346.0" promptText="flipkart.com" style="-fx-border-color: #B7C3D7; -fx-border-radius: 2em; -fx-background-radius: 2em;">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -105,7 +105,7 @@
          <children>
             <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@assets/icon.png" />
+                  <Image url="@assets/icon1.png" />
                </image>
                <VBox.margin>
                   <Insets bottom="10.0" top="50.0" />
@@ -119,9 +119,9 @@
                   <Font name="Impact" size="48.0" />
                </font>
             </Label>
-            <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="256.0" text="Home" textFill="#efeeed">
+            <Button id="homeIcon" fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchtoHome" prefHeight="60.0" prefWidth="256.0" text="Home" textFill="#efeeed">
                <graphic>
-                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@assets/home.png" />
                      </image>
@@ -140,11 +140,11 @@
                   <Font name="Microsoft Sans Serif" size="26.0" />
                </font>
             </Button>
-            <Button fx:id="btnSettings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="256.0" stylesheets="@style.css" text="Settings" textFill="#efeeed">
+            <Button fx:id="onSettings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchtoResult" prefHeight="60.0" prefWidth="256.0" stylesheets="@style.css" text="Result" textFill="#efeeed">
                <graphic>
-                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/update.png" />
+                        <Image url="@assets/result.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -155,11 +155,11 @@
                   <Font name="Microsoft Sans Serif" size="26.0" />
                </font>
             </Button>
-            <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="256.0" stylesheets="@style.css" text="About Us" textFill="#efeeed">
+            <Button fx:id="onAbout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchtoAbout" prefHeight="60.0" prefWidth="256.0" stylesheets="@style.css" text="About Us" textFill="#efeeed">
                <graphic>
-                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/about.png" />
+                        <Image url="@assets/contact.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -172,12 +172,17 @@
             </Button>
             <Pane prefHeight="215.0" prefWidth="294.0">
                <children>
-                  <Label layoutX="67.0" layoutY="166.0" text="Status :- Online" textFill="#efeeed">
+                  <Label layoutX="69.0" layoutY="154.0" text="Status :- Online" textFill="#efeeed">
                      <font>
-                        <Font name="Microsoft Sans Serif" size="20.0" />
+                        <Font name="Microsoft Sans Serif" size="22.0" />
                      </font>
                   </Label>
-                  <Circle fill="#64d358" layoutX="223.0" layoutY="179.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Circle fill="#64d358" layoutX="235.0" layoutY="169.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Label layoutX="97.0" layoutY="189.0" text="Version - 0.9.6" textFill="#c3c3c3">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                     </font>
+                  </Label>
                </children>
             </Pane>
          </children>

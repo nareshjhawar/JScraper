@@ -32,7 +32,7 @@ public class Scrape {
 //    private static final String PRODUCT_RATING = ".a-icon-alt";
 
     public class Product {
-        private String name;
+        private String title;
         private String link;
 
         private String productImg;
@@ -41,12 +41,12 @@ public class Scrape {
 
         //#getter and setter methods
         // title
-        public String getName() {
-            return name;
+        public String getTitle() {
+            return title;
         }
 
-        public void setName(String name) {
-            this.name = name;
+        public void setTitle(String title) {
+            this.title = title;
         }
 
         // link
@@ -99,7 +99,7 @@ public class Scrape {
             Product product = new Product();
             //title of product
             Elements titleElements = productElement.getElementsByClass(PRODUCT_TITLE_CLASS);
-            product.setName(titleElements.text());
+            product.setTitle(titleElements.text());
             //link of product
             Elements linkElements = productElement.getElementsByTag("a");
             if (!linkElements.isEmpty()) {

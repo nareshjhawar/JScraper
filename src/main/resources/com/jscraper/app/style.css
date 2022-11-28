@@ -10,7 +10,7 @@
 
 #side-panel{
     /*-fx-background-color : linear-gradient( #50BFA2 0%, #0E3329 100%);*/
-    -fx-background-image: url('assets/SIDEPANNEL.png');
+    -fx-background-image: url('assets/panel.png');
     -fx-background-size: stretch;
     -fx-background-repeat: no-repeat;
     -fx-background-radius: 25px;
